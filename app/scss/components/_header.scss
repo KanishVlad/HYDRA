@@ -1,5 +1,5 @@
 .header {
-  padding-bottom: 124px;
+  padding-bottom: 82px;
 }
 
 .menu {
@@ -20,6 +20,10 @@
     }
   }
 
+  &__link {
+    vertical-align: super;
+  }
+
 }
 
 .connection {
@@ -30,6 +34,7 @@
   &__link {
     &:not(:last-child) {
       margin-right: 38px;
+      
     }
 
   }
@@ -37,5 +42,5 @@
 }
 
 .logo {
-  margin-right: 205px;
+  margin-right: 200px;
 }
