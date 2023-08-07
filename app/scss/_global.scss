@@ -18,6 +18,19 @@ body {
   margin: 0 auto;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 
 .link {
   font-size: 12px;
@@ -41,3 +54,32 @@ body {
   }
 }
 
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.section-arrow {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 228px;
+    height: 100px;
+    right: -70%;
+    top: -58%;
+    background-image: url('../images/icons-defolt/big-arrow.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
+}
