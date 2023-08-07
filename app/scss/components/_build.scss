@@ -1,0 +1,93 @@
+.build {
+  padding-bottom: 114px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 102px;
+  }
+
+  &__arrow {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 228px;
+      height: 100px;
+      right: -95%;
+      top: -58%;
+      background-image: url('../images/icons-defolt/big-arrow.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+    }
+  }
+
+  &__text {
+    max-width: 650px;
+    width: 100%;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 9px;
+  }
+}
+
+.card {
+  padding: 40px 30px;
+  max-width: 310px;
+  width: 100%;
+  border-radius: 40px;
+  background: radial-gradient(50.00% 50.00% at 50.00% 50.00%, #433D60 0%, #211E2E 100%);
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 218px;
+    height: 218px;
+    transform: translate(0%, -7%);
+    fill: #0E0E0E;
+    background-image: url('../images/ellipse.svg');
+    z-index: -1;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 154px;
+    height: 1px;
+    bottom: 42%;
+    left: 25%;
+    background-color: rgba(192, 183, 232, 0.33);
+  }
+
+  &__img {
+    border-radius: 50%;
+    margin-bottom: 21px;
+  }
+
+  &__title {
+    margin-bottom: 39px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  &__text {
+    margin-bottom: 35px;
+    font-size: 12px;
+    line-height: 2;
+    max-width: 310px;
+    width: 100%;
+  }
+}
