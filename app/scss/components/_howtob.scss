@@ -1,0 +1,130 @@
+.howtob {
+  padding-bottom: 112px;
+  position: relative;
+  &::before {
+    position: absolute; 
+    content: "";
+    width: 1449px;
+    height: 163px;
+    background-image: url('../images/howtob-bg.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 119px;
+  }
+
+  &__inner {
+    margin-right: 30px;
+  }
+
+  &__arrow {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 228px;
+      height: 100px;
+      right: -78%;
+      top: -58%;
+      background-image: url('../images/icons-defolt/big-arrow.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+    }
+  }
+
+  &__text {
+    max-width: 652px;
+    width: 100%;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__item {
+
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  &__step {
+    position: relative;
+    width: 159px;
+    height: 159px;
+    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+    border-radius: 50%;
+    margin-bottom: 35px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 198px;
+      height: 198px;
+      background-color: rgba(13, 13, 13, 0.32);
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__numb {
+    font-size: 64px;
+    font-weight: 700;
+    position: absolute;
+    color: #343045;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: bold;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 30px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 28px;
+      height: 22px;
+      background-image: url('../images/icons-defolt/build-arrow.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      top: 6px;
+      left: -14px;
+    }
+  }
+}
+
+.howtob-title {
+  padding-left: 0;
+  &::before {
+      position: absolute;
+      content: "";
+      width: 28px;
+      height: 22px;
+      background-image: url('../images/icons-defolt/build-arrow.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      top: 6px;
+      left: -45px;
+    }
+}

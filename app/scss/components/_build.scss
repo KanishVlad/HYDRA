@@ -1,5 +1,19 @@
 .build {
   padding-bottom: 114px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 1442px;
+    height: 814px;
+    top: 34%;
+    right: 10%;
+    background-image: url('../images/build-bg.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+  }
 
   &__top {
     display: flex;

@@ -1,7 +1,10 @@
 .tech {
+  padding-bottom: 70px;
+
   &__wrapper {
     padding-bottom: 60px;
   }
+
   &__top {
     background-repeat: no-repeat;
     background-size: cover;
@@ -44,7 +47,8 @@
     display: block;
     width: 60px;
     height: 60px;
-    background-color: $accent;
+    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+    ;
     border-radius: 50px;
     position: absolute;
     left: 50%;
@@ -69,6 +73,6 @@
     &:not(:last-child) {
       margin-right: 30px;
     }
-    
+
   }
 }
