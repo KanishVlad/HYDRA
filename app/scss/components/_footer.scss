@@ -1,0 +1,116 @@
+.footer {
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 71px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 1437px;
+      height: 542px;
+      bottom: 20%;
+      left: -5%;
+      background-image: url('../images/footer-bg.svg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: -1;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 604px;
+      height: 203px;
+      bottom: 50%;
+      left: 50%;
+      transform: translate(-55%, 25%);
+       background-image: url('../images/footer-line.svg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: -1;
+    }
+  }
+
+  &__logo {
+    margin-right: 181px;
+  }
+
+
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 23px 211px;
+    margin-right: 140px;
+  }
+
+  &__link {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  &__copyright {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1.82px;
+    text-align: center;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 1269px;
+      height: 2px;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: url('../images/footer-copy-bg.svg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &__text {
+    padding: 49px 0 59px;
+  }
+}
+
+
+.footer-social {
+  &__title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 39px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 59px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 32px;
+    height: 32px;
+  }
+
+  &__icon {
+    fill: #C0B7E8;
+  }
+
+  &__link-build {
+    padding: 15px 41px;
+  }
+}
