@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,41 +13,46 @@
   <link rel="stylesheet" href="css/style.min.css">
 
 </head>
+
 <body>
 
-<section class="header">
+  <section class="header" id="header">
   <div class="container">
     <nav class="menu">
-      <a class="logo" href="#">
-        <img class="logo__img" src="images/logo.svg" alt="logo">
-      </a>
+      <div class="menu__logo">
+        <a class="logo" href="#header">
+          <img class="logo" src="images/footer-logo.svg" alt="logo" width="102" height="103">
+        </a>
+        <img src="images/logo-text.svg" alt="logo text" width="76" height="46">
+      </div>
+
       <ul class="menu__list">
         <li class="menu__item">
-          <a class="munu__link link" href="#">
+          <a class="munu__link link" href="#about">
             ABOUT
           </a>
         </li>
         <li class="menu__item">
-          <a class="munu__link link" href="#">
+          <a class="munu__link link" href="#services">
             SERVICES
           </a>
         </li>
         <li class="menu__item">
-          <a class="munu__link link" href="#">
+          <a class="munu__link link" href="#technologies">
             TECHNOLOGIES
           </a>
         </li>
         <li class="menu__item">
-          <a class="munu__link link" href="#">
+          <a class="munu__link link" href="#howto">
             HOW TO
           </a>
         </li>
       </ul>
       <div class="connection">
-        <a class="connection__link link link__contact" href="#">
+        <a class="connection__link link link__contact" href="#hero">
           CONTACT US
         </a>
-        <a class="connection__link link link--mode" href="#">
+        <a class="connection__link link link--mode" href="#join">
           JOIN HYDRA
         </a>
       </div>
@@ -54,16 +60,14 @@
   </div>
 </section>
 
+  <main class="main">
 
-
-      <main class="main">
-
-        <section class="hero">
+    <section class="hero">
   <div class="container">
     <div class="hero__top">
       <div class="hero__content">
         <h1 class="hero-title">
-          <div class="hero-title__inner">
+          <div class="hero-title__inner" id="hero">
             <span class="hero-title__mode">Dive</span> Into The Depths
           </div>
           Of <span class="hero-title__mode">Virtual Reality</span>
@@ -112,7 +116,7 @@
     </div>
   </div>
 </section>
-        <section class="about">
+    <section class="about" id="about">
   <div class="container">
     <div class="about__top">
       <div class="about__inner">
@@ -157,7 +161,7 @@
     </div>
   </div>
 </section>
-        <section class="build">
+    <section class="build" id="services">
   <div class="container">
     <div class="build__top">
       <div class="build__inner">
@@ -247,7 +251,7 @@
     </div>
   </div>
 </section>
-        <section class="tech">
+    <section class="tech" id="technologies">
   <div class="container">
     <div class="tech__wrapper">
       <div class="tech__top" style="background-image: url('images/tech-bg.jpg');">
@@ -284,7 +288,7 @@
     </div>
   </div>
 </section>
-        <section class="howtob">
+    <section class="howtob" id="howto">
   <div class="container">
     <div class="howtob__top">
       <div class="howtob__inner">
@@ -352,7 +356,7 @@
     </div>
   </div>
 </section>
-        <section class="join">
+    <section class="join" id="join">
   <div class="container">
     <div class="join__inner">
       <div class="join__top">
@@ -393,127 +397,13 @@
     </div>
   </div>
 </section>
-        <section class="footer">
-  <div class="container">
-    <div class="footer__content">
-      <a class="footer__logo" href="#">
-        <img class="footer__img" src="images/footer-logo.svg" alt="logo" width="185" height="187">
-      </a>
-      <ul class="footer__list">
-        <li class="footer__item">
-          <a class="footer__link" href="#">
-            ABOUT
-          </a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">
-            F.A.Q
-          </a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">
-            SERVICES
-          </a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">
-            SITEMAP
-          </a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">
-            TECHNOLOGIES
-          </a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">
-            CONDITIONS
-          </a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">
-            HOW TO
-          </a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">
-            LICENSES
-          </a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">
-            JOIN HYDRA
-          </a>
-        </li>
-      </ul>
 
-      <div class="footer__social footer-social">
-        <h5 class="footer-social__title">
-          SOCIALIZE WITH HYDRA
-        </h5>
-        <ul class="footer-social__list">
-          <li class="footer-social__item">
-            <a class="footer-social__link" href="#">
-              <span class="sr-only">link to facebook</span>
-              <svg class="footer-social__icon" width="32" height="32">
-                <use xlink:href="images/sprite.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer-social__item">
-            <a class="footer-social__link" href="#">
-              <span class="sr-only">link to twitter</span>
-              <svg class="footer-social__icon" width="32" height="32">
-                <use xlink:href="images/sprite.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer-social__item">
-            <a class="footer-social__link" href="#">
-              <span class="sr-only">link to linkedin</span>
-              <svg class="footer-social__icon" width="32" height="32">
-                <use xlink:href="images/sprite.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer-social__item">
-            <a class="footer-social__link" href="#">
-              <span class="sr-only">link to youtube</span>
-              <svg class="footer-social__icon" width="32" height="32">
-                <use xlink:href="images/sprite.svg#icon-youtube"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer-social__item">
-            <a class="footer-social__link" href="#">
-              <span class="sr-only">link to instagram</span>
-              <svg class="footer-social__icon" width="32" height="32">
-                <use xlink:href="images/sprite.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer-social__item">
-            <a class="footer-social__link" href="#">
-              <span class="sr-only">link to pinterest</span>
-              <svg class="footer-social__icon" width="32" height="32">
-                <use xlink:href="images/sprite.svg#icon-pinterest"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-        <a class="footer-social__link-build link link--mode" href="#">
-          BUILD YOUR WORLD
-        </a>
-      </div>
-    </div>
-    <div class="footer__copyright">
-      <p class="footer__text">
-        2023 © HYDRA LANDING PAGE - BY ZINE. E. FALOUTI - ALL RIGHTS RESERVED
-      </p>
-    </div>
-  </div>
-</section>
+  </main>
 
-      </main>
+ 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
+
 </html>

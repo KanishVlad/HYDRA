@@ -3,9 +3,31 @@
 }
 
 .menu {
-  padding-top: 50px;
+  padding: 50px 4px;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+
+  &::before {
+    content: '';
+    height: 185px;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 0;
+    z-index: -1;
+    transform: translateX(-50%);
+    background-color: transparent;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 200px;
+    align-items: center;
+  }
+
 
   &__list {
     display: flex;
@@ -26,6 +48,36 @@
 
 }
 
+.menu-fixed {
+  animation-name: show-menu;
+  animation-duration: 1s;
+  padding: 50px 23px 10px 2px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 1270px;
+  z-index: 10;
+  margin: 0 auto;
+
+  &::before {
+    background-color: black;
+    z-index: -1;
+    opacity: 0.8;
+  }
+}
+
+@keyframes show-menu {
+  0% {
+    opacity: 0;
+    top: -200px;
+  }
+
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
 .connection {
   align-items: center;
   display: flex;
@@ -34,7 +86,7 @@
   &__link {
     &:not(:last-child) {
       margin-right: 38px;
-      
+
     }
 
   }
@@ -42,5 +94,21 @@
 }
 
 .logo {
-  margin-right: 200px;
+  outline: 2px solid transparent;
+  border-radius: 5px;
+  transition: opacity 0.3s, outline-color 0.3s;
+  padding: 3px 3px 0 0;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    outline-color: #ababcb;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
 }
